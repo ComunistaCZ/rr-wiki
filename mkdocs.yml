@@ -1,0 +1,45 @@
+site_name: "44. Ravens Regiment Wiki"
+site_url: "https://wiki.ravens-regiment.com/"
+theme:
+  name: material
+  language: cs
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji
+
+nav:
+  - Domů: index.md
+  - Nastavení serveru:
+      - ACE Medical Systém:
+          - Přehled: ace/prehled.md
+          - Ošetření jako hráč: ace/hrac.md
+          - Ošetření jako CLS/medik: ace/cls.md
+      - Individuální nastavení (nevynucené serverem):
+          - Přehled: individual/prehled.md
+          - Doporučené nastavení: individual/doporucene.md
+          - Pokročilé možnosti: individual/pokrocile.md
+  - Addony:
+      - Veřejné addony:
+          - RR Stretcher Mod: addons/stretcher.md
+          - RR Heads: addons/heads.md
+      - Interní addony:
+          - RR Clan Mod: addons/clanmod.md
+          - RR Additions: addons/additions.md
+          - RR A3 Datapack: addons/datapack.md
+          - RR Gearpack 2.1: addons/gearpack-2-1.md
+          - RR Gearpack 2.0 (Legacy): addons/gearpack-2-0.md
+          - RR Gearpack 1.2 (Legacy): addons/gearpack-1-2.md
